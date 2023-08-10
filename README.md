@@ -6,7 +6,7 @@ Code for the paper "Frame-Level Label Refinement for Skeleton-Based Weakly-Super
 
 Architecture of Network
 
-![Architecture of Network](./images/framework.png)
+![Architecture of Network](./images/framework.jpg)
 
 ## Requirements
 ```bash
