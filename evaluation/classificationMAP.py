@@ -23,5 +23,4 @@ def getClassificationMAP(confidence, labels):
     AP = []
     for i in range(np.shape(labels)[1]):
         AP.append(getAP(confidence[:, i], labels[:, i]))
-    print(AP)
     return 100 * sum(AP) / len(AP)

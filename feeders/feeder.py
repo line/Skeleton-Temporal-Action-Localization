@@ -158,7 +158,7 @@ def test(
     graph="graph.ntu_rgb_d.Graph",
     is_3d=True,
     folder_p="viz",
-    label_json="../../action_recognition/data/action_label_2_idx_3.json",
+    label_json="prepare/configs/action_label_split1.json",
 ):
     """
     vis the samples using matplotlib
@@ -298,7 +298,7 @@ if __name__ == "__main__":
     import os
 
     os.environ["DISPLAY"] = "localhost:10.0"
-    data_path = "../../data/train_loc_3.pkl"
+    data_path = "dataset/processed_data/train_split1.pkl"
     graph = "graph.ntu_rgb_d.Graph"
     dataset = Feeder(data_path)
     test(dataset, idx=0, graph=graph, is_3d=True)

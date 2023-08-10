@@ -15,7 +15,7 @@ parser = argparse.ArgumentParser(
     )
 parser.add_argument(
     "--data-root",
-    default="data/",
+    default="dataset/babel_v1.0_sequence/",
     help="the root path of the dataset",
     type=str
 )
@@ -25,8 +25,15 @@ parser.add_argument(
     help="the split of the dataset",
     type=int
 )
-
+parser.add_argument(
+    "--output-folder",
+    default="dataset/processed_data",
+    help="the output folder of the generated data",
+    type=str
+)
 args = parser.parse_args()
+
+os.makedirs(args.output_folder, exist_ok=True)
 
 def main(data_root):
     train_data = dutils.read_pkl(os.path.join(data_root, "babel_v1.0_train_ntu_sk_ntu-style_preprocessed.pkl"))
@@ -76,7 +83,7 @@ def label_train_data(data_root, train_data, act2idx):
             
     data = {"sid": sid, "X": x, "Y": y, "L":loc}
 
-    dutils.write_pkl(data, os.path.join(data_root, f"train_split{args.split}.pkl"))
+    dutils.write_pkl(data, os.path.join(args.output_folder, f"train_split{args.split}.pkl"))
     print (f"#Train sequence: {len(x)}")
 
 
@@ -115,7 +122,7 @@ def label_val_data(data_root, test_data, act2idx):
             
     data = {"sid": sid, "X": x, "Y": y, "L":loc}
 
-    dutils.write_pkl(data, os.path.join(data_root, f"val_split{args.split}.pkl"))
+    dutils.write_pkl(data, os.path.join(args.output_folder, f"val_split{args.split}.pkl"))
     print (f"#Test sequence: {len(x)}")
 
 

@@ -1,3 +1,4 @@
+# Adapted from https://github.com/abhinanda-punnakkal/BABEL/ to frame-wise motion segmentation
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 # vim:fenc=utf-8
@@ -193,10 +194,10 @@ class Babel_AR:
         # Load dataset
         self.babel = dataset
         self.dense = dense
-        self.jpos_p = "../data_created/amass/"
+        self.jpos_p = "dataset/amass"
 
         # Get frame-rate for each seq. in AMASS
-        f_p = "../data_created/featp_2_fps.json"
+        f_p = "dataset/BABEL/action_recognition/data/featp_2_fps.json"
         self.ft_p_2_fps = dutils.read_json(f_p)
 
         # Dataset w/ keys = {'X', 'Y1', 'Yk', 'Yov', 'seg_id',  'sid',
@@ -306,8 +307,6 @@ class Babel_AR:
         """
         yf = self._get_per_f_labels(ann, ann_type, seq_dur)
 
-        print (f"# seq: {seq_ft.shape[0]} label: {len(yf)}")
-
         seq_ft = seq_ft[:len(yf)]
         assert seq_ft.shape[0] == len(yf)
 
@@ -354,11 +353,10 @@ class Babel_AR:
 
 #  Create dataset
 # --------------------------
-d_folder = "/workspace/vhdataprod/BABEL/babel_v1.0_release/"
-w_folder = "/workspace/vhdataprod/BABEL/babel_v1.0_sequence/"
+d_folder = "dataset/babel_v1.0_release/"
+w_folder = "dataset/babel_v1.0_sequence/"
+os.makedirs(w_folder, exist_ok=True)
 for spl in ["train", "val"]:
-    # for spl in ["train"]:
-
     # Load Dense BABEL
     data = dutils.read_json(ospj(d_folder, f"{spl}.json"))
     dataset = [data[sid] for sid in data]
