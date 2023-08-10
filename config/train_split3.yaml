@@ -1,10 +1,10 @@
-work_dir: ./work_dir/
-model_saved_name: ./work_dir/
+work_dir: ./work_dir/split3/
+model_saved_name: ./work_dir/split3/
 
 # feeder
 feeder: feeders.feeder.Feeder
 train_feeder_args:
-  data_path: ./data/train.pkl
+  data_path: ./dataset/processed_data/train_split3.pkl
   debug: False
   random_choose: False
   random_shift: False
@@ -13,7 +13,7 @@ train_feeder_args:
   nb_class: 4
 
 test_feeder_args:
-  data_path: ./data/val.pkl
+  data_path: ./dataset/processed_data/val_split3.pkl
   nb_class: 4
 
 # model

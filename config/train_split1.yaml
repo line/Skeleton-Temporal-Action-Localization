@@ -1,0 +1,43 @@
+work_dir: ./work_dir/split1/
+model_saved_name: ./work_dir/split1/
+
+# feeder
+feeder: feeders.feeder.Feeder
+train_feeder_args:
+  data_path: ./dataset/processed_data/train_split1.pkl
+  debug: False
+  random_choose: False
+  random_shift: False
+  random_move: False
+  window_size: -1
+  nb_class: 4
+
+test_feeder_args:
+  data_path: ./dataset/processed_data/val_split1.pkl
+  nb_class: 4
+
+# model
+model: model.agcn.Model
+model_args:
+  num_class: 4
+  num_person: 1 
+  num_point: 25
+  graph: graph.ntu_rgb_d.Graph
+  graph_args:
+    labeling_mode: 'spatial'
+
+#optim
+weight_decay: 0.0001
+base_lr: 0.001
+step: []
+
+# training
+device: [0]
+optimizer: 'Adam'
+loss: 'CE'
+batch_size: 8
+test_batch_size: 1
+num_epoch: 100
+nesterov: True
+lambda_mil: 1.0
+# weights: /ps/project/conditional_action_gen/2s_agcn/runs/babel_v1.0/ntu_sk_60_agcn_joint_const_lr_1e-3-49-23450.pt
