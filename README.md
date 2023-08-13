@@ -19,9 +19,7 @@ pip install -r requirements.txt
 ## Data Preparation
 Due to the distribution policy of AMASS dataset, we are not allowed to distribute the data directly. We provide a series of script that could reproduce our motion segmentation dataset from BABEL dataset.
 
-Download [AMASS Dataset](https://amass.is.tue.mpg.de/) and [BABEL Dataset](https://babel.is.tue.mpg.de/).
-
-Unzip and locate them in the `dataset` folder.
+Download [AMASS Dataset](https://amass.is.tue.mpg.de/) and [BABEL Dataset](https://babel.is.tue.mpg.de/). Unzip and locate them in the `dataset` folder.
 
 The whole directory should be look like this:
 ```
