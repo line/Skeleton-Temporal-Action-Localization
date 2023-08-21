@@ -239,7 +239,7 @@ def store_ntu_jpos(smplh_model_p, dest_jpos_p, amass_p):
 
         ft_p = ospj(amass_p, "/".join(ft_p_))
 
-        jrot_smplh = np.load(ospj(amass_p, ft_p))["poses"]
+        jrot_smplh = np.load(ft_p)["poses"]
         # Break joints down into body parts
         smpl_body_jrot = jrot_smplh[:, 3:66]
         left_hand_jrot = jrot_smplh[:, 66:111]

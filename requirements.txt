@@ -20,7 +20,7 @@ tqdm==4.56.0
 traitlets==5.0.5
 typing-extensions==3.7.4.3
 wcwidth==0.2.5
-smplx==0.1.13
+smplx==0.1.28
 opencv-python
 einops
 matplotlib
