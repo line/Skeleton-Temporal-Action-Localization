@@ -21,6 +21,8 @@ Due to the distribution policy of AMASS dataset, we are not allowed to distribut
 
 Download [AMASS Dataset](https://amass.is.tue.mpg.de/) and [BABEL Dataset](https://babel.is.tue.mpg.de/). Unzip and locate them in the `dataset` folder.
 
+Download [SMPLH Model](https://mano.is.tue.mpg.de/index.html) and put the `SMPLH_male.pkl` file in the `human_model` folder. 
+
 The whole directory should be look like this:
 ```
 Skeleton-Temporal-Action-Localization
@@ -31,6 +33,9 @@ Skeleton-Temporal-Action-Localization
 └───config
 └───prepare
 └───...
+│   
+└───human_model
+│   └───SMPLH_male.pkl
 │   
 └───dataset
     └───amass

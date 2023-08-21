@@ -3,6 +3,7 @@ data
 dataset
 work_dir
 
+*.pkl
 *.mp4
 
 *.sh.o*
