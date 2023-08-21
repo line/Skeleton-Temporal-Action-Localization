@@ -21,7 +21,7 @@ Due to the distribution policy of AMASS dataset, we are not allowed to distribut
 
 Download [AMASS Dataset](https://amass.is.tue.mpg.de/) and [BABEL Dataset](https://babel.is.tue.mpg.de/). Unzip and locate them in the `dataset` folder.
 
-Download [SMPLH Model](https://mano.is.tue.mpg.de/index.html) and put the `SMPLH_male.pkl` file in the `human_model` folder. 
+Prepare the SMPLH Model following [this](https://github.com/vchoutas/smplx/blob/main/tools/README.md#smpl-h-version-used-in-amass) and put the `SMPLH_male.pkl` file in the `human_model` folder. 
 
 The whole directory should be look like this:
 ```

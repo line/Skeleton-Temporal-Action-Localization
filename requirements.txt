@@ -26,3 +26,4 @@ einops
 matplotlib
 scikit-learn
 pandas
+chumpy
