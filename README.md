@@ -67,7 +67,7 @@ python train.py --config config/train_split1.yaml
 ```
 
 ## Acknowledgement
-Our codes are based on [BABEL](https://github.com/abhinanda-punnakkal/BABEL) and [2s-AGCN](https://github.com/lshiwjx/2s-AGCN).
+Our codes are based on [BABEL](https://github.com/abhinanda-punnakkal/BABEL), [2s-AGCN](https://github.com/lshiwjx/2s-AGCN) and [FAC-Net](https://github.com/LeonHLJ/FAC-Net).
 
 
 ## Citation
