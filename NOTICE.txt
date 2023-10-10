@@ -1,0 +1,15 @@
+### Open Source Software Notice ###
+
+This product from LINE Corporation contains the open source software detailed below. Please refer to the indicated open source licenses (as are included following this notice) for the terms and conditions of their use.
+
+
+Please be informed that LINE Corporation product may contain open source software listed in to tables below.
+
+BABEL (Non-commercial License)
+https://github.com/abhinanda-punnakkal/BABEL
+
+2s-AGCN (CC BY-NC 4.0 License)
+https://github.com/lshiwjx/2s-AGCN
+
+FAC-Net (MIT License)
+https://github.com/LeonHLJ/FAC-Net
