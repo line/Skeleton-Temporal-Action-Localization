@@ -1,8 +1,6 @@
 import sys
 
 from rotation import *
-
-# from rotation import *
 from tqdm import tqdm
 
 
