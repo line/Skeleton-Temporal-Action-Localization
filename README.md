@@ -83,3 +83,8 @@ Our codes are based on [BABEL](https://github.com/abhinanda-punnakkal/BABEL), [2
   year={2023}
 }
 ```
+
+## License
+[Apache License 2.0](LICENSE)
+
+Additionally, this repository contains third-party software. Refer [NOTICE.txt](NOTICE.txt) for more details and follow the terms and conditions of their use.
