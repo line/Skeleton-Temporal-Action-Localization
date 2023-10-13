@@ -1,9 +1,7 @@
 ### Open Source Software Notice ###
 
-This product from LINE Corporation contains the open source software or third-party software detailed below which are not applied to the LICENSE file in this repository. Their licenses can be found under the respective software repository (as included in this notice) for the terms and conditions of their use. 
-
-Please be informed that LINE Corporation product may contain open source software listed in tables below.
-Licences can be found under the respective software repositories.
+This product from LINE Corporation contains the open source software or third-party software listed below, to which the terms in the LICENSE file in this repository do not apply.
+Please refer to the licences of the respective software repositories for the terms and conditions of their use.
 
 BABEL (Non-commercial License)
 https://github.com/abhinanda-punnakkal/BABEL
