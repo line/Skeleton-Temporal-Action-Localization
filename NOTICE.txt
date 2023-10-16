@@ -11,3 +11,6 @@ https://github.com/lshiwjx/2s-AGCN
 
 FAC-Net (MIT License)
 https://github.com/LeonHLJ/FAC-Net
+
+pytorch-classification(MIT License)
+https://github.com/bearpaw/pytorch-classification
